@@ -1,5 +1,5 @@
 
-function detect_data_sources(dir::String = joinpath(Pkg.dir(), "OpenSecrets/data/"))
+function detect_data_sources(dir::String = joinpath(dirname(@__FILE__),"..","data"))
     data_sources = Dict()
 
     for thing in readdir(dir)
